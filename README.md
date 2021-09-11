@@ -225,3 +225,7 @@ And the lambda output :
 ```json
 {"isBase64Encoded": false, "statusCode": 200, "headers": {"content-length": "25", "content-type": "application/json", "x-correlation-id": "e6ccda71-c841-40de-8208-aff40a2b155b"}, "body": "{\"message\":\"Hello World\"}"}
 ```
+
+### Deploy the lambda to ECR
+
+Runing `make deploy_to_ecr` will build the image and tag with `:latest` then push to ECR. This does not publish the updated lambda, which you can do [in the console](https://us-west-1.console.aws.amazon.com/lambda/home?region=us-west-1#/functions/hello-lambda/edit/image-settings?tab=image) (it is [unclear](https://docs.aws.amazon.com/cli/latest/reference/lambda/update-function-code.html) if the this is possible in the CLI).
