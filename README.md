@@ -2,6 +2,8 @@
 
 A demo project to test the AWS Lambda container support with Python FastAPI framework
 
+Write up [here](https://medium.com/analytics-vidhya/python-fastapi-and-aws-lambda-container-3e524c586f01)
+
 ### Install dependencies
 
 A requirements file declare all dependencies (Mangum, FastAPI, Uvicorn, ...). Use the following command to install the reuqired dependencies (For Python 3.8.5)
