@@ -4,7 +4,7 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from mangum import Mangum
 
-from app.routes import helloworld_router
+from app.routes import hello_world, goodbye_world
 from app.monitoring import logging_config
 from app.middlewares.correlation_id_middleware import CorrelationIdMiddleware
 from app.middlewares.logging_middleware import LoggingMiddleware
@@ -42,7 +42,8 @@ app.add_middleware(CorrelationIdMiddleware)
 #   Routers configuration                                                     #
 ###############################################################################
 
-app.include_router(helloworld_router.router, prefix='/hello', tags=['hello'])
+app.include_router(hello_world.router, prefix='/hello', tags=['hello'])
+app.include_router(goodbye_world.router, prefix='/goodbye', tags=['goodbye'])
 
 ###############################################################################
 #   Handler for AWS Lambda                                                    #
