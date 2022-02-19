@@ -117,8 +117,6 @@ The last major step is to configure AWS API Gateway as the front door for your A
 
 ![](images/api_gtw_3.jpg)
 
-![](images/api_gtw_4.jpg)
-
 ![](images/api_gtw_5.jpg)
 
 ![](images/api_gtw_6.JPG)
