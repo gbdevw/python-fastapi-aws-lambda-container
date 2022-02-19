@@ -133,10 +133,10 @@ The last major step is to configure AWS API Gateway as the front door for your A
 
 ### Test the application
 
-You can make a request to your API using the following command :
+You can make a request to your API using the following command (do not forget to replace the hostname) :
 
 ```
-curl -L https://8jjzn56u5h.execute-api.eu-central-1.amazonaws.com/dev/hello
+curl https://8jjzn56u5h.execute-api.eu-central-1.amazonaws.com/dev/hello/
 ```
 
 Or use your browser :
