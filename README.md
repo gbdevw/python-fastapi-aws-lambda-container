@@ -15,7 +15,7 @@ pip install -r ./requirements.txt
 You can either use the following command :
 
 ```
-python -m app.ap
+python -m app.app
 ```
 
 Or deploy on uvicorn :
