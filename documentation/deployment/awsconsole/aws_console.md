@@ -40,6 +40,10 @@ The first major step is to create a AWS ECR repsitory and push the container ima
 
 ![](images/create_ecr_1.jpg)
 
+![](images/create_ecr_2.JPG)
+
+![](images/create_ecr_3.jpg)
+
 The guide will use the following URI to tag the container images : '766641682971.dkr.ecr.eu-central-1.amazonaws.com/python-fastapi-lambda'
 
 ### Push the container on ECR
@@ -85,19 +89,49 @@ docker push 766641682971.dkr.ecr.eu-central-1.amazonaws.com/python-fastapi-lambd
 
 The container image is now available in your ECR repository
 
-ff
+![](images/push_ecr_1.JPG)
 
 ### Configure AWS Lambda to run your container
 
 The second major step is to configure AWS lambda to run the container. The following images show this step by step :
 
-ff
+![](images/config_lambda_1.jpg)
+
+![](images/config_lambda_2.jpg)
+
+![](images/config_lambda_3.JPG)
+
+![](images/config_lambda_4.jpg)
+
+![](images/config_lambda_5.jpg)
+
+![](images/config_lambda_6.JPG)
 
 ### Configure AWS API Gateway as the front door for your API running on AWS Lambda
 
-The last major step is to configure AWS API Gateway as the front door for your API. The followng images show this step by step :
+The last major step is to configure AWS API Gateway as the front door for your API. The application defines only one resource (/hello) with a GET method. The following images show how to configure the API Gateway step by step The followng images show this step by step :
 
-ff
+![](images/api_gtw_1.jpg)
+
+![](images/api_gtw_2.jpg)
+
+![](images/api_gtw_3.jpg)
+
+![](images/api_gtw_4.jpg)
+
+![](images/api_gtw_5.jpg)
+
+![](images/api_gtw_6.JPG)
+
+![](images/api_gtw_7.jpg)
+
+![](images/api_gtw_8.jpg)
+
+![](images/api_gtw_9.jpg)
+
+![](images/api_gtw_10.jpg)
+
+![](images/api_gtw_11.jpg)
 
 ### Test the application
 
@@ -109,4 +143,16 @@ curl -L https://8jjzn56u5h.execute-api.eu-central-1.amazonaws.com/dev/hello
 
 Or use your browser :
 
+![](images/test_1.jpg)
 
+See the logs from Cloudwatch :
+
+![](images/test_2.JPG)
+
+### Clean up
+
+To clean up resources :
+
+1. Delete the API Gateway
+2. Delete the Lambda function
+3. Delete the ECR repository

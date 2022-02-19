@@ -230,3 +230,7 @@ And the lambda output :
 ```json
 {"isBase64Encoded": false, "statusCode": 200, "headers": {"content-length": "25", "content-type": "application/json", "x-correlation-id": "e6ccda71-c841-40de-8208-aff40a2b155b"}, "body": "{\"message\":\"Hello World\"}"}
 ```
+
+### Deploy the application on AWS
+
+[Step by step guide to deploy the application on AWS using console](./documentation/deployment/awsconsole/aws_console.md)
