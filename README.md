@@ -1,3 +1,7 @@
+### Archived
+
+This repository has been archived and will no longer be supported.
+
 ### Python + FastAPI + Mangum + AWS Lambda Container
 
 A demo project to test the AWS Lambda container support with Python FastAPI framework. The purpose of the project is to show how to develop a REST API with FastAPI, how to build & test it locally and how to deploy it on AWS using serverless services (AWS ECR, AWS Lambda & AWS API Gateway).
